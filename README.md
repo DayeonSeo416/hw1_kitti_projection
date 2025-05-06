@@ -1,7 +1,7 @@
 # hw1_kitti_projection
 This repo is a project for implementing a ROS2 node class that subscribes camera and LiDAR topics, and then projects the point cloud data onto the RGB image, later publishing the result by RViz2.
 
-## ? My Environment
+## 🛠 My Environment
 |Settings|Version|
 |------|---|
 |OS|Ubuntu 22.04.5 LTS|
@@ -11,17 +11,17 @@ This repo is a project for implementing a ROS2 node class that subscribes camera
 |OpenCV|4.5.4|
 |Eigen|3.4.0|
 
-## ? Before Start
-### ?KITTI Dataset Download
+## 🛠 Before Start
+### ✨ KITTI Dataset Download
 - https://www.cvlibs.net/datasets/kitti/raw_data.php
 
-### ? Used Data
+### ✨ Used Data
 - 2011_09_26_drive_0015 (1.2GB) Data
 
     - [synced+rectified data]
     - [calibration]
 
-## ? Setup
+## 🛠 Setup
 ### 1. Download or clone this repo under the {ROS_Workspace/src} folder.
 ~~~ bash
 $ cd ~/ros2_ws/src
@@ -76,7 +76,7 @@ std::ifstream velo_to_cam_file("/home/dayeon/ros2_ws/data/2011_09_26/calib_velo_
 std::ifstream cam_to_cam_file("/home/dayeon/ros2_ws/data/2011_09_26/calib_cam_to_cam.txt");
 ~~~
 
-## ? How to Build
+## 🛠 How to Build
 ~~~ bash
 $ cd ~/ros2_ws
 $ colcon build --packages-select hw1_kitti_projection
@@ -88,7 +88,7 @@ $ ros2 run hw1_kitti_projection lidar_to_image_projection_node
 $ rviz2
 ~~~
 
-## ? Visualize RViz2
+## 🛠 Visualize RViz2
 You could import the "default.rviz" file into the Rviz2.
 
-![RVIZ Image](/home/dayeon/ros2_ws/src/hw1_kitti_projection/RVIZ2_image.png)
+![RVIZ Image](/hw1_kitti_projection/RVIZ2_image.png)
