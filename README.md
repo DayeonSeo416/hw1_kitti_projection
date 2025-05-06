@@ -91,4 +91,4 @@ $ rviz2
 ## 🛠 Visualize RViz2
 You could import the "default.rviz" file into the Rviz2.
 
-![RVIZ Image](/hw1_kitti_projection/RVIZ2_image.png)
+![RVIZ Image](RVIZ2_image.png)
